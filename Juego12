@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>EscaladaLógica</title>
+  <style>
+    body{margin:0;font-family:Arial;background:#7c2d12 url('https://i.imgur.com/2k3P0qQ.jpg') center/cover;color:#fff}
+    .box{max-width:400px;margin:40px auto;padding:30px;background:#0008;border-radius:16px;text-align:center}
+    button{padding:14px 28px;font-size:18px;margin:8px;border:none;border-radius:8px;cursor:pointer;background:#fff;color:#000}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>EscaladaLógica – Nivel <span id="lvl">1</span></h1>
+    <p>Encuentra la ruta óptima</p>
+    <div id="game">Cargando...</div>
+    <button onclick="nextLvl()">Siguiente Nivel</button>
+    <button onclick="retar()">Retar amigo</button>
+  </div>
+  <script>
+    let lvl=1;
+    function nextLvl(){lvl++;document.getElementById('lvl').textContent=lvl;}
+    function retar(){window.open('https://glideapp.io/share','_blank')}
+  </script>
+</body>
+</html>
